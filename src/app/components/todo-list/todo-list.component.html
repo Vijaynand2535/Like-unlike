@@ -1,0 +1,12 @@
+<ul class="list-group">
+    <li 
+    *ngFor=" let todo of todoArr"
+    class="list-group-item font-weight-bold">
+    {{todo.skill}}  {{todo.id}}
+
+    <span class="float-right">
+        <button class="btn btn-outline-primary btn-sm mr-2">Edit</button>
+        <button class="btn btn-outline-danger btn-sm" (click)="onDelete(todo.id)">Delete</button>
+    </span>
+    </li>
+</ul>

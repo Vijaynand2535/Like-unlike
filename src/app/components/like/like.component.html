@@ -1,0 +1,19 @@
+<!-- <i class="fa-solid fa-heart fa-2x isLike"
+[ngClass]="{
+    'isLike' : isLike === true
+}"
+(click)="onLikeDislike()"
+></i> -->
+
+<i class="fa-solid fa-thumbs-up fa-3x isLike mr-5"
+[ngClass]="{
+    'isLike' : isLike === true
+}"
+(click)="onLike()"
+></i>
+<i class="fa-solid fa-thumbs-down fa-3x isDislike"
+[ngClass]="{
+    'isDislike' : isDislike === false
+}"
+(click)="onDislike()"
+></i>
